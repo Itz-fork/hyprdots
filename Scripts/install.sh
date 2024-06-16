@@ -140,6 +140,9 @@ EOF
     #--------------------------------#
     "${scrDir}/install_pkg.sh" "${scrDir}/install_pkg.lst"
     rm "${scrDir}/install_pkg.lst"
+
+    # install omz using official install script (oh-my-zsh-git fails)
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 #---------------------------#
